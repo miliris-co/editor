@@ -22,6 +22,7 @@
     "devDependencies": {
         "prettier": "3.0.3",
         "typescript": "^5.2.2",
+        "unocss": "^0.55.7",
         "vite": "^4.4.9"
     },
     "engines": {

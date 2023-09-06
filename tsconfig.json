@@ -3,7 +3,7 @@
         "target": "ES2020",
         "useDefineForClassFields": true,
         "module": "ESNext",
-        "lib": ["ES2020", "DOM", "DOM.Iterable"],
+        "lib": ["ES2020", "DOM", "DOM.Iterable", "WebWorker"],
         "skipLibCheck": true,
         "allowJs": true,
 
@@ -23,5 +23,5 @@
         "noImplicitReturns": true,
         "noImplicitAny": true
     },
-    "include": ["src"]
+    "include": ["src", "vite.config.ts", "uno.config.ts"]
 }
