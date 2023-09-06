@@ -1,0 +1,26 @@
+# logs
+logs
+*.log
+pnpm-debug.log*
+
+# dependencies
+node_modules
+
+# build
+dist
+dist-ssr
+
+# local
+*.local
+
+# IDE configs
+.vscode
+.idea
+
+# misc
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?

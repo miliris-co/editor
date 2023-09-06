@@ -1,29 +1,31 @@
 {
-  "name": "@miliris/editor",
-  "private": true,
-  "version": "0.0.1",
-  "license": "MPL-2.0",
-  "homepage": "https://github.com/miliris-co/editor",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/miliris-co/editor"
-  },
-  "author": {
-    "name": "Igor Michalak",
-    "url": "https://github.com/igormichalak"
-  },
-  "type": "module",
-  "scripts": {
-    "dev": "vite",
-    "build": "tsc && vite build",
-    "preview": "vite preview"
-  },
-  "devDependencies": {
-    "typescript": "^5.2.2",
-    "vite": "^4.4.9"
-  },
-  "engines": {
-    "node": ">=20",
-    "pnpm": ">=8"
-  }
+    "name": "@miliris/editor",
+    "private": true,
+    "version": "0.0.1",
+    "license": "MPL-2.0",
+    "homepage": "https://github.com/miliris-co/editor",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/miliris-co/editor"
+    },
+    "author": {
+        "name": "Igor Michalak",
+        "url": "https://github.com/igormichalak"
+    },
+    "type": "module",
+    "scripts": {
+        "dev": "vite",
+        "build": "tsc && vite build",
+        "preview": "vite preview",
+        "format": "prettier --write '{**/*,*}.{js,ts,html,css,json,yaml,yml,md}'"
+    },
+    "devDependencies": {
+        "prettier": "3.0.3",
+        "typescript": "^5.2.2",
+        "vite": "^4.4.9"
+    },
+    "engines": {
+        "node": ">=20",
+        "pnpm": ">=8"
+    }
 }
