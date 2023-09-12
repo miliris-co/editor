@@ -1,0 +1,35 @@
+/* additions to Tailwind CSS reset */
+
+:root {
+    color-scheme: only dark;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    font-kerning: normal;
+    font-synthesis: none;
+}
+
+@media not (prefers-reduced-motion) {
+    :root {
+        scroll-behavior: smooth;
+    }
+}
+
+body {
+    display: flow-root;
+    overflow-x: clip;
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+    outline: 3px solid #f87171;
+}
+
+a,
+button {
+    touch-action: manipulation;
+}
