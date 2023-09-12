@@ -10,6 +10,9 @@ node_modules
 dist
 dist-ssr
 
+# TypeScript and ESLint
+.eslintcache
+
 # local
 *.local
 
