@@ -8,6 +8,7 @@
     text-rendering: optimizeLegibility;
     font-kerning: normal;
     font-synthesis: none;
+    font-size: 16px;
 }
 
 @media not (prefers-reduced-motion) {
