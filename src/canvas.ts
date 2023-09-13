@@ -7,7 +7,7 @@ const ctx = canvas.getContext('2d', { alpha: false })!;
 const resizeObserver = new ResizeObserver(entries => {
     for (const entry of entries) {
         if (entry.contentBoxSize) {
-            const box = entry.contentBoxSize[0];
+            const box = entry.contentBoxSize[0]!;
             canvas.width = box.inlineSize;
             canvas.height = box.blockSize;
         } else {

@@ -5,7 +5,9 @@
         "module": "ESNext",
         "lib": ["ES2020", "DOM", "DOM.Iterable", "WebWorker"],
         "skipLibCheck": true,
+        "verbatimModuleSyntax": true,
         "allowJs": true,
+        "moduleDetection": "force",
 
         /* Bundler mode */
         "moduleResolution": "bundler",
@@ -16,6 +18,7 @@
 
         /* Linting */
         "strict": true,
+        "noUncheckedIndexedAccess": true,
         "noUnusedLocals": true,
         "noUnusedParameters": true,
         "noFallthroughCasesInSwitch": true,
