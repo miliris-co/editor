@@ -40,12 +40,25 @@ function redraw() {
 redraw();
 
 function zoomAction(e: WheelEvent) {
+    const minZoom = 0.4;
+    const maxZoom = 1.4;
+
+    const preX = (e.offsetX - offset.x) / zoom;
+    const preY = (e.offsetY - offset.y) / zoom;
+
     if (e.deltaY < 0) {
+        if (zoom >= maxZoom) return;
         zoom += 0.1;
     } else if (e.deltaY > 0) {
+        if (zoom <= minZoom) return;
         zoom -= 0.1;
     }
-    zoom = +clamp(zoom, 0.4, 1.4).toFixed(1);
+    zoom = +clamp(zoom, minZoom, maxZoom).toFixed(1);
+
+    const postX = (e.offsetX - offset.x) / zoom;
+    const postY = (e.offsetY - offset.y) / zoom;
+    offset.x += (postX - preX) * zoom;
+    offset.y += (postY - preY) * zoom;
 
     redraw();
 }
